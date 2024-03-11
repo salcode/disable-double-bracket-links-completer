@@ -1,6 +1,6 @@
 wp.hooks.addFilter(
 	'editor.Autocomplete.completers',
-	'salcode-disable-double-bracket-completer',
+	'disable-double-bracket-links-completer',
 	(completers) => completers.filter(
 		(completer) => completer.name !== 'links'
 	)

@@ -14,6 +14,11 @@
 
 namespace salcode\DisableDoubleBracketLinksCompleter;
 
+// If this file is called directly, abort.
+if ( ! defined( 'WPINC' ) ) {
+	die;
+}
+
 function register_script() {
 	wp_register_script(
 		'disable-double-bracket-links-completer',
